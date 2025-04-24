@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dinesh Courier offers trusted domestic and international courier services with fast delivery and over 22 years of experience."
+    />
+    <title>Dinesh Courier</title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha383-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ajax -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="Css/style.css" />
+    <!-- javascript -->
+    <script src="Js/script.js"></script>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- nav -->
+    <header>
+      <nav
+        id="navbar"
+        class="navbar fixed-top navbar-expand-lg bg-body-tertiary"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#main">dinesh Courier</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#aboutUs"
+                >About US</a
+              >
+              <a class="nav-link" href="#contactUs">Contact Us</a>
+              <a class="nav-link" href="#shipNow">Ship Now</a>
+              <a class="nav-link" href="#FAQs">FAQ's</a>
+              <!-- <a class="nav-link contact" >Contact: +91 9877049989</a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- content -->
+    <div class="content">
+      <!-- main -->
+      <section class="view" id="main">
+        <div class="row align-items-center">
+          <!-- form container -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <!-- form -->
+            <div class="heading text-center">
+              <h2>Get a call<span id="exclamation">!</span></h2>
+            </div>
+            <div class="form-class">
+              <form
+                action="https://formsubmit.co/superandsafecourier@gmail.com"
+                method="POST"
+              >
+                <!-- submit success -->
+                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/"> -->
+                <!-- subject -->
+                <input type="hidden" name="_subject" value="Lead" />
+                <!-- cc -->
+                <input type="hidden" name="_cc" value="akshit62832@gmail.com" />
+                <div class="mb-3">
+                  <!-- capcha disable -->
+                  <input type="hidden" name="_captcha" value="false" />
+                  <!--name-->
+                  <div class="mb-3">
+                    <label for="name" class="form-label"
+                      >Enter Name <span class="mandate">*</span></label
+                    >
+                    <input
+                      maxlength="20"
+                      name="Name"
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <!-- number -->
+                    <label for="phoneNumberInput" class="form-label"
+                      >Your Phone Number <span class="mandate">*</span></label
+                    >
+                    <input
+                      maxlength="15"
+                      name="phone number"
+                      type="number"
+                      id="phoneNumberInput"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+
+                  <!-- parcel orign -->
+                  <div class="mb-3">
+                    <label for="parcelOrign" class="form-label"
+                      >Parcel orign</label
+                    >
+                    <input
+                      maxlength="20"
+                      name="Parcel orign"
+                      type="text"
+                      class="form-control"
+                      id="parcelOrign"
+                    />
+                  </div>
+                  <!-- parcel destination -->
+                  <div class="mb-3">
+                    <label for="parceldestination" class="form-label"
+                      >Parcel destination</label
+                    >
+                    <input
+                      maxlength="20"
+                      name="Parcel destination"
+                      type="text"
+                      class="form-control"
+                      id="parceldestination"
+                    />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">
+                    Submit <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- intro container -->
+          <div class="col-12 message col-md-6 col-lg-6">
+            <p class="intro-text">
+              We make sure your parcels reach their destination on time, every
+              time. No matter the distance, we deliver with care and precision.
+              Trust us to handle your shipments safely and efficiently.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- aboutUs -->
+      <section class="view" id="aboutUs">
+        <div class="heading text-center"><h2>We meet your needs for</h2></div>
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center col-md-12 col-lg-3">
+            <div class="card-area"></div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/parcel_handover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fast Delivery</h5>
+                <p class="card-text">
+                  We ensure quick and reliable delivery, getting your packages
+                  to the destination on time, every time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center col-md-12 col-lg-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/parcel-packing.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Good Packaging</h5>
+                <p class="card-text">
+                  We take extra care in packaging your items securely to protect
+                  them during transit and ensure safe delivery.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center col-md-12 col-lg-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/worldmap.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">International Service</h5>
+                <p class="card-text">
+                  Our global network enables you to send parcels to over 200
+                  countries with seamless tracking and support.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center col-md-12 col-lg-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/22+exp.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">22+ Years Of Experience</h5>
+                <p class="card-text">
+                  With over two decades of expertise, we deliver trust,
+                  efficiency, and excellence in every shipment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contactUs -->
+      <section class="view" id="contactUs">
+        <div class="heading text-center"><h2>Locate US</h2></div>
+        <div class="find">
+          <div class="row">
+            <div class="map col-12 col-md-6 col-lg-6">
+              <span>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3381.978292252778!2d75.410148!3d32.042779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b93aa977f99e9%3A0x31a94a7200616935!2sAnjani%20Courier%20Service!5e0!3m2!1sen!2sin!4v1728828334322!5m2!1sen!2sin"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe
+              ></span>
+              <span>
+                <a
+                  class="btn"
+                  id="getmethere"
+                  href="https://www.google.com/maps/dir/31.6124396,74.8718894/Anjani+Courier+Service,+Civil+Line+Rd,+opp.+Rigali+Hotel,+Civil+Lines,+Gurdaspur,+Punjab+143521/@31.826291,74.8112091,10z/data=!3m1!4b1!4m18!1m7!3m6!1s0x391b93aa977f99e9:0x31a94a7200616935!2sAnjani+Courier+Service!8m2!3d32.0427789!4d75.4101483!16s%2Fg%2F11rkg0x_8r!4m9!1m1!4e1!1m5!1m1!1s0x391b93aa977f99e9:0x31a94a7200616935!2m2!1d75.4101116!2d32.0427644!3e0?hl=en&entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  >Get me there</a
+                >
+              </span>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <!-- Contact Info -->
+              <div class="contact mb-3 text-center">
+                <h2 class="sub-heading">Contact Us</h2>
+                <ul class="list-unstyled d-flex">
+                  <li>
+                    <a href="tel:+9877049989" class="text-decoration-none">
+                      <i class="fa fa-phone me-1"></i>
+                      +91 9877049989</h6>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:superandsafecourier@gmail.com"
+                      class="text-decoration-none"
+                    >
+                      <i class="fa fa-envelope me-1"></i>
+                      superandsafecourier@gmail.com</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-center">
+                <h2>
+                  Civil Line Rd, opp. Rigali Hotel, Civil Lines, Gurdaspur,
+                  Punjab 143521
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- shipNow -->
+      <section class="view" id="shipNow">
+        <div class="heading text-center">
+          <h2>Enter details to ship parcel</h2>
+        </div>
+        <div class="row justify-content-center">
+          <!-- national -->
+          <div class="col-12 col-md-6 mt-2 col-lg-5">
+            <div class="sub-heading text-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>National</h4>
+            </div>
+            <div class="form-class">
+              <form
+                action="https://formsubmit.co/superandsafecourier@gmail.com"
+                method="POST"
+              >
+                <!-- submit success -->
+                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/"> -->
+                <!-- subject -->
+                <input type="hidden" name="_subject" value="National Courier" />
+                <!-- cc -->
+                <!-- <input type="hidden" name="_cc" value="akshit62832@gmail.com" /> -->
+                <div class="mb-3">
+                  <!-- capcha disable -->
+                  <input type="hidden" name="_captcha" value="false" />
+                  <!--name-->
+                  <div class="mb-3">
+                    <label for="name" class="form-label"
+                      >Enter Name <span class="mandate">*</span></label
+                    >
+                    <input
+                      maxlength="20"
+                      name="Name"
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <!-- number -->
+                    <label for="phoneNumberInput" class="form-label"
+                      >Your Phone Number <span class="mandate">*</span></label
+                    >
+                    <input
+                      maxlength="15"
+                      name="phone number"
+                      type="number"
+                      id="phoneNumberInput"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+
+                  <!-- parcel orign -->
+                  <div class="mb-3">
+                    <label for="parcelOrign" class="form-label"
+                      >Parcel orign <span class="mandate">*</span></label
+                    >
+                    <input
+                      maxlength="20"
+                      name="Parcel orign"
+                      type="text"
+                      class="form-control"
+                      id="parcelOrign"
+                      required
+                    />
+                  </div>
+                  <!-- parcel destination -->
+                  <div class="mb-3">
+                    <label for="parceldestination" class="form-label"
+                      >Parcel destination <span class="mandate">*</span></label
+                    >
+                    <input
+                      maxlength="20"
+                      name="Parcel destination"
+                      type="text"
+                      class="form-control"
+                      id="parceldestination"
+                      required
+                    />
+                  </div>
+                  <!-- parcel weight -->
+                  <div class="mb-3">
+                    <label for="parcelweight" class="form-label"
+                      >parcel weight in kg</label
+                    >
+                    <input
+                      maxlength="10"
+                      name="Parcel destination"
+                      type="number"
+                      class="form-control"
+                      id="parcelweight"
+                    />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">
+                    Submit <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- International -->
+          <div class="col-12 mt-2 col-md-6 col-lg-5">
+            <div class="sub-heading text-center">
+              <i class="fa-solid fa-globe"></i>
+              <h4>International</h4>
+            </div>
+            <div class="form-class">
+              <form
+                action="https://formsubmit.co/superandsafecourier@gmail.com"
+                method="POST"
+              >
+                <!-- submit success -->
+                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/"> -->
+                <!-- subject -->
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="International Courier"
+                />
+                <!-- cc -->
+                <!-- <input type="hidden" name="_cc" value="akshit62832@gmail.com" /> -->
+                <div class="mb-3">
+                  <!-- capcha disable -->
+                  <input type="hidden" name="_captcha" value="false" />
+                  <!--name-->
+                  <div class="mb-3">
+                    <label for="name" class="form-label"
+                      >Enter name <span class="mandate">*</span></label
+                    >
+                    <input
+                      maxlength="20"
+                      name="Name"
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <!-- number -->
+                    <label for="phoneNumberInput" class="form-label"
+                      >Your phone number
+                      <span class="mandate city">*</span></label
+                    >
+                    <input
+                      maxlength="15"
+                      name="phone number"
+                      type="number"
+                      id="phoneNumberInput"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+
+                  <!-- parcel orign -->
+                  <div class="mb-3">
+                    <label for="parcelOrign" class="form-label"
+                      >Parcel orign
+                      <span class="mandate country">*</span></label
+                    >
+                    <input
+                      maxlength="20"
+                      name="Parcel orign"
+                      type="text"
+                      class="form-control"
+                      id="parcelOrign"
+                      required
+                    />
+                  </div>
+                  <!-- parcel destination -->
+                  <div class="mb-3">
+                    <label for="parceldestination" class="form-label"
+                      >Destination country<span class="mandate state"
+                        >*</span
+                      ></label
+                    >
+                    <input
+                      maxlength="20"
+                      name="Parcel destination"
+                      type="text"
+                      class="form-control"
+                      id="parceldestination"
+                      required
+                    />
+                  </div>
+                  <!-- parcel weight -->
+                  <div class="mb-3">
+                    <label for="parcelweight" class="form-label"
+                      >Parcel weight in kg</label
+                    >
+                    <input
+                      maxlength="10"
+                      name="Parcel destination"
+                      type="number"
+                      class="form-control"
+                      id="parcelweight"
+                    />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">
+                    Submit <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQs -->
+      <section class="view" id="FAQs">
+        <div class="faq row align-items-center">
+          <div class="col-12 col-lg-12 col-md-6">
+            <h2 class="heading text-center">Frequently Asked Questions</h2>
+
+            <div class="accordion" id="faqAccordion">
+              <!--   How I can ship items in Dinesh Courier? -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    How I can ship items in Dinesh Courier?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    You can call to us on number
+                    <span class="phone-number">+91 9877049989</span>. You can
+                    also enter your details in ship now form to get a call.
+                  </div>
+                </div>
+              </div>
+              <!--   What are the services that can be availed Dinesh Courier? -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What are the services that can be availed Dinesh Courier?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Services include domestic and international shipping at
+                    reasonable prices.
+                  </div>
+                </div>
+              </div>
+              <!--   What kind of items I can not ship through Dinesh Courier? -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    What kind of items I can not ship through Dinesh Courier?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    For international service items prohibited from shipping
+                    include, but are not limited to, explosives, inflammable
+                    substances, sharp instruments, currency, organs, body parts,
+                    mobile phones, articles of gold or silver,
+                    <span class="mandate">and more</span>.
+                  </div>
+                </div>
+              </div>
+              <!--  What are the packaging guidelines? -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    What are the packaging guidelines?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Ensure name and number of items is correct. Items should be
+                    securely packed to prevent damage. Fragile items should be
+                    labeled properly.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <section class="footer" id="footer">
+        <footer class="bg-dark text-white text-center text-lg-start">
+          <div class="container p-4">
+            <!-- Company Info -->
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase heading">Dinesh Courier</h5>
+                <p>
+                  Trusted courier services for over 22 years, providing domestic
+                  and international shipping with precision and care.
+                </p>
+              </div>
+
+              <!-- Contact Info -->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase heading">Contact Us</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="tel:+919888616881"
+                      class="text-white text-decoration-none"
+                    >
+                      <i class="fa fa-phone me-2"></i> +91 9877049989
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:superandsafecourier@gmail.com"
+                      class="text-white text-decoration-none"
+                    >
+                      <i class="fa fa-envelope me-2"></i>
+                      superandsafecourier@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Social Media Links -->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase heading">Follow Us</h5>
+                <div>
+                  <a href="https://wa.me/9877049989" class="text-white me-3"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                  <a href="#" class="text-white me-3"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-white me-3"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </div>
+                <div>
+                  <a class="developer text-white text-decoration-none" href="https://akshit.info/" target="_blank"
+                    >Contact Developer 
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Copyright Section -->
+          <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+          >
+            © 2024 Dinesh Courier | All Rights Reserved
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
