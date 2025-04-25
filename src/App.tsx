@@ -1,17 +1,21 @@
-import { useState } from "react";
 import Navbar from "./assets/components/Navbar";
-
-import "./App.css";
+import About from "./assets/components/About";
+import Contact from "./assets/components/Contact";
+import Shipnow from "./assets/components/ShipNow";
+import Faq from "./assets/components/Faq";
+import Footer from "./assets/components/Footer";
+import Main from "./assets/components/Main";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="min-h-screen bg-gray-100">
-      <Navbar />
-      <div className="container mx-auto p-4">
-        <h1 className="text-  font-bold text-blue-600">Tailwind  is working!</h1>
-      </div>
+      <Navbar navlist={["About", "Contact", "Shipnow", "FAQ's"]} />
+      <Main></Main>
+      <About></About>
+      <Contact></Contact>
+      <Shipnow></Shipnow>
+      <Faq></Faq>
+      <Footer></Footer>
     </div>
   );
 }
