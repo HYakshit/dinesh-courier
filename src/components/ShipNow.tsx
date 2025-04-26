@@ -26,30 +26,35 @@ const Shipnow = () => {
                 type="text"
                 maxLength={20}
                 name="Name"
+                required={true}
               />
               <Input
                 title="Your Phone Number"
                 type="number"
                 maxLength={15}
                 name="phone number"
+                required={true}
               />
               <Input
                 title="Parcel Origin"
                 type="text"
                 maxLength={20}
                 name="Parcel origin"
+                required={true}
               />
               <Input
                 title="Parcel Destination"
                 type="text"
                 maxLength={20}
                 name="Parcel destination"
+                required={true}
               />
               <Input
                 title="Parcel Weight in kg"
                 type="number"
                 maxLength={10}
                 name="Parcel weight"
+                required={true}
               />
 
               <div className="text-center">
@@ -80,30 +85,35 @@ const Shipnow = () => {
                 type="text"
                 maxLength={20}
                 name="Name"
+                required={true}
               />
               <Input
                 title="Your Phone Number"
                 type="number"
                 maxLength={15}
                 name="phone number"
+                required={true}
               />
               <Input
                 title="Parcel Origin"
                 type="text"
                 maxLength={20}
                 name="Parcel origin"
+                required={true}
               />
               <Input
                 title="Destination Country"
                 type="text"
                 maxLength={20}
                 name="Parcel destination"
+                required={true}
               />
               <Input
                 title="Parcel Weight in kg"
                 type="number"
                 maxLength={20}
                 name="Parcel weight"
+                required={true}
               />
               <div className="text-center">
               <Button text="Submit" withplane={true}></Button>

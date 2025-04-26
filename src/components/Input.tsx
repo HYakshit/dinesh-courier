@@ -1,14 +1,15 @@
 interface inputProps {
-    title: string;
-    name: string;
-    type: string;
-    maxLength: number;
-  }
-const Input = ({title,name,type,maxLength}:inputProps) => {
+  title: string;
+  name: string;
+  type: string;
+  maxLength: number;
+  required: boolean;
+}
+const Input = ({ title, name, type, maxLength, required }: inputProps) => {
   return (
     <>
       <label htmlFor={name} className="form-label">
-        {title} <span className="mandate">*</span>
+        {title} {required && <span className="mandate">*</span>}
       </label>
       <input
         maxLength={maxLength}
@@ -16,7 +17,7 @@ const Input = ({title,name,type,maxLength}:inputProps) => {
         type={type}
         id={name}
         className="form-control"
-        required
+        required={required}
       />
     </>
   );

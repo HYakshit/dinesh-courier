@@ -33,6 +33,7 @@ const Main = () => {
                   name="Name"
                   type="text"
                   maxLength={20}
+                  required={true}
                 />
                 {/* number */}
                 <Input
@@ -40,6 +41,7 @@ const Main = () => {
                   name="PhoneNumber"
                   type="number"
                   maxLength={13}
+                  required={true}
                 />
                 {/* parcel origin */}
                 <Input
@@ -47,6 +49,7 @@ const Main = () => {
                   name="ParcelOrign"
                   type="text"
                   maxLength={20}
+                  required={false}
                 />
                 {/* parcel destination */}
                 <Input
@@ -54,6 +57,7 @@ const Main = () => {
                   name="ParcelDestination"
                   type="text"
                   maxLength={20}
+                  required={false}
                 />
               </div>
               <div className="text-center">
