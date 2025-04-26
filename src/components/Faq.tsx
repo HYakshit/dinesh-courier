@@ -29,10 +29,10 @@ const Faq = () => {
   ];
 
   return (
-    <section className="view bg-grey" id="FAQs">
+    <section className="view bg-grey" id="faq">
       <div className="faq row align-items-center">
-        <div className="col-12 col-lg-12 col-md-6">
-          <h2 className="heading text-center">Frequently Asked Questions</h2>
+        <div className="col-12">
+          <h4 className="heading text-center">Frequently Asked Questions</h4>
 
           <div className="accordion" id="faqAccordion">
             {faqData.map((faq, index) => (

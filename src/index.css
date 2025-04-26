@@ -13,16 +13,29 @@
 /* variables */
 :root {
   --nav-color: rgb(221, 134, 47);
-  --nav-color-focus:rgb(197, 109, 22);
+  --nav-color-focus: rgb(197, 109, 22);
   --grey-color: rgb(240, 240, 240);
   --nav-length: 59.6px;
   --font-size: 16px;
   --sub-heading: rgb(206, 71, 71);
 }
 /* common */
-.hover-effect a i:hover{
+* {
+  font-weight: 400;
+}
+p {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: 30px;
+  margin: 0px;
+}
+.hover-effect a i:hover {
   color: var(--nav-color);
-  }
+}
 .bg-grey {
   background-color: var(--grey-color);
 }
@@ -30,19 +43,7 @@
   width: 100%;
   padding: 50px 20px;
 }
-.contact {
-  color: black;
-}
-.contact ul {
-  justify-content: center;
-}
-.contact a {
-  color: black;
-}
-.contact a h6 {
-  color: black;
-  margin: 0px 5px;
-}
+
 .heading {
   color: var(--nav-color);
   padding: 15px 0px;
@@ -67,6 +68,10 @@ label {
 }
 .sub-heading {
   color: var(--sub-heading);
+  font-size: 23px;
+}
+.sub-heading h4 {
+  font-size: 23px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -141,8 +146,11 @@ input::-webkit-inner-spin-button {
 .intro-text {
   text-align: left;
   font-size: 30px;
-  /* text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,1px 1px 0 #ffffff; */
+  font-family: "Comic Relief", cursive;
+  font-weight: 500;
   color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
 }
 /* about */
 .about-row {
@@ -157,47 +165,82 @@ input::-webkit-inner-spin-button {
 .about-row .row .card-title {
   color: var(--nav-color);
 }
-/* contactUs */
-.contactUs ul {
-  flex-direction: column;
-  font-size: 20px;
-}
-.contactUs li a {
+/* contact */
+.map-area {
   display: flex;
-  align-items: center;
-}
-.contactUs li a i {
-  color: var(--nav-color);
-}
-.map {
   flex-direction: column;
   align-items: center;
-}
-.map a {
-  width: 200px;
-}
-#contactUs .row {
-  align-items: center;
-}
-.map {
-  display: flex;
   justify-content: center;
 }
-/* shipNow */
-#shipNow .form-class {
-  background-color: #f7f7f7;
+.map-area a {
+  width: 200px;
 }
-#shipNow .heading {
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* 4:3 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+.responsive-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.contact ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.contact li a {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+}
+.contact li a i {
+  color: var(--nav-color);
+}
+.contact .row {
+  align-items: center;
+}
+.contact .btn {
+  margin-top: 8px;
+}
+.contact .sub-heading {
+  margin-bottom: 10px;
+}
+.contact a h6 {
+  color: black;
+  margin: 0px 5px;
+}
+/* shipNow */
+.shipnow .sub-heading {
+  margin-bottom: 5px;
+}
+.shipnow .form-class {
+  background-color: #f7f7f7 !important;
+}
+.shipnow .heading {
   padding: 0px;
   margin-top: 25px;
 }
+.shipnow .btn {
+  margin-top: 10px;
+}
 /* FAQs */
-
 .faq .accordion-item {
   margin-bottom: 10px;
   background-color: inherit;
   border: 1px;
   border-radius: 5px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
 }
 .accordion-header:focus,
 .accordion-header:active {
@@ -225,15 +268,38 @@ input::-webkit-inner-spin-button {
   padding: 0px;
 }
 .footer a i {
-font-size: 20px;
+  font-size: 20px;
 }
 /* responsive */
 @media (max-width: 480px) {
-  .mobile-margin{
+  .mobile-margin {
     margin-top: 20px;
+  }
+  .intro-text {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+  }
+  .map-container {
+    padding-bottom: 90%; /* Taller aspect ratio for mobile */
+  }
+  * {
+    font-weight: 350;
+  }
+  p {
+    font-size: 16px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 25px;
   }
 }
 @media (max-width: 767px) {
+  .map-container {
+    padding-bottom: 80%; /* Adjusted for tablets */
+  }
 }
 @media (min-width: 1000px) {
   .about-row .row .card {
@@ -243,10 +309,10 @@ font-size: 20px;
   .form-class {
     margin-inline: 40px;
   }
-  .contactUs li {
-    margin-right: 10px;
-  }
-  .contactUs ul {
+  .contact ul {
     flex-direction: row;
+  }
+  .map-container {
+    padding-bottom: 65%; /* Wider aspect ratio for desktop */
   }
 }

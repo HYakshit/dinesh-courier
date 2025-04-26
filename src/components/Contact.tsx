@@ -1,23 +1,21 @@
 import Input from "./Input";
 
-
 const Contact = () => {
   return (
-    <section className="view contactUs bg-grey" id="contactUs">
+    <section className="view contact bg-grey" id="contact">
       <div className="heading text-center">
         <h2>Locate US</h2>
       </div>
       <div className="row">
-        <div className="map col-12 col-md-6 col-lg-6">
-          <span>
+        <div className="map-area col-12 col-md-6 col-lg-6">
+          <span className="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3381.978292252778!2d75.410148!3d32.042779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b93aa977f99e9%3A0x31a94a7200616935!2sAnjani%20Courier%20Service!5e0!3m2!1sen!2sin!4v1728828334322!5m2!1sen!2sin"
-              width="350"
-              height="350"
-              style={{ border: "0" }}
+              style={{ border: "0", width: "100%", height: "100%" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              className="responsive-map"
             />
           </span>
           <span>
@@ -32,16 +30,18 @@ const Contact = () => {
           </span>
         </div>
         <div className="mobile-margin col-12 col-md-6 col-lg-6">
-          <div className="contact text-center">
-            <h2 className="sub-heading">Contact Us</h2>
+          <div className="text-center">
+            <h3 className="sub-heading">Contact Us</h3>
             <ul className="list-unstyled d-flex">
-             <div>  <li>
-                <a href="tel:+9877049989" className="text-decoration-none">
-                  <i className="fa fa-phone me-1"></i>
-                  +91 9877049989
-                </a>
-              </li></div> 
-           
+              <div>
+                <li>
+                  <a href="tel:+9877049989" className="text-decoration-none">
+                    <i className="fa fa-phone me-1"></i>
+                    +91 9877049989
+                  </a>
+                </li>
+              </div>
+
               <li>
                 <a
                   href="mailto:superandsafecourier@gmail.com"
@@ -54,10 +54,10 @@ const Contact = () => {
             </ul>
           </div>
           <div className="text-center">
-            <h2>
+            <h3>
               Civil Line Rd, opp. Rigali Hotel, Civil Lines, Gurdaspur, Punjab
               143521
-            </h2>
+            </h3>
           </div>
         </div>
       </div>

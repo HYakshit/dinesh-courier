@@ -1,3 +1,4 @@
+import Button from "./Button";
 import Input from "./Input";
 
 const Main = () => {
@@ -8,9 +9,9 @@ const Main = () => {
         <div className="col-12 form-1 col-lg-6">
           {/* form */}
           <div className="heading text-center">
-            <h2>
+            <h1>
               Get a call<span id="exclamation">!</span>
-            </h2>
+            </h1>
           </div>
           <div className="form-class">
             <form
@@ -33,7 +34,6 @@ const Main = () => {
                   type="text"
                   maxLength={20}
                 />
-
                 {/* number */}
                 <Input
                   title="Enter Phone Number"
@@ -41,7 +41,6 @@ const Main = () => {
                   type="number"
                   maxLength={13}
                 />
-
                 {/* parcel origin */}
                 <Input
                   title="Parcel Origin"
@@ -49,7 +48,6 @@ const Main = () => {
                   type="text"
                   maxLength={20}
                 />
-
                 {/* parcel destination */}
                 <Input
                   title="Parcel Destination"
@@ -59,9 +57,7 @@ const Main = () => {
                 />
               </div>
               <div className="text-center">
-                <button type="submit" className="btn">
-                  Submit <i className="fa-solid fa-paper-plane"></i>
-                </button>
+                <Button text="Submit" withplane={true}></Button>
               </div>
             </form>
           </div>

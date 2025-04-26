@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="container p-4">
           {/* Company Info */}
           <div className="row">
-            <div className="col-lg-4 col-md-6 mb-md-0">
+            <div className="col-lg-4 col-md-4 mb-md-0">
               <h5 className="text-uppercase heading">Dinesh Courier</h5>
               <p>
                 Trusted courier services for over 22 years, providing domestic
@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="col-lg-4 hover-effect col-md-6 mb-md-0">
+            <div className="col-lg-4 hover-effect col-md-4 mb-md-0">
               <h5 className="text-uppercase heading">Contact Us</h5>
               <ul className="list-unstyled ">
                 <li>
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
 
             {/* Social Media Links */}
-            <div className="col-lg-4 hover-effect col-md-12 mb-md-0">
+            <div className="col-lg-4 hover-effect col-md-4 mb-md-0">
               <h5 className="text-uppercase heading">Follow Us</h5>
               <div>
                 <a href="https://wa.me/9877049989" className="text-white  me-3">

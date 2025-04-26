@@ -1,19 +1,15 @@
 import Card from "./Card";
 
 // Using require for image imports to avoid TypeScript errors
-const FastDeliveryImg = new URL('../images/fastDilivery.webp', import.meta.url).href;
-const PackagingImg = new URL('../images/parcel-packing.webp', import.meta.url).href;
-const WorldMapImg = new URL('../images/worldmap.webp', import.meta.url).href;
-const ExperienceImg = new URL('../images/22+exp.webp', import.meta.url).href;
-// const FastDeliveryImg = "kk",
-//   PackagingImg = "kk",
-//   WorldMapImg = "kk",
-//   ExperienceImg = "kk";
+const FastDeliveryImg = new URL('../assets/images/fastDilivery.webp', import.meta.url).href;
+const PackagingImg = new URL('../assets/images/parcel-packing.webp', import.meta.url).href;
+const WorldMapImg = new URL('../assets/images/worldmap.webp', import.meta.url).href;
+const ExperienceImg = new URL('../assets/images/22+exp.webp', import.meta.url).href;
 
 const About = () => {
   return (
     <div>
-      <section className="view aboutUs" id="aboutUs">
+      <section className="view aboutUs" id="about">
         <div className="heading text-center">
           <h2>We meet your needs for</h2>
         </div>

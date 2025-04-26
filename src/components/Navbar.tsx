@@ -1,11 +1,28 @@
 import React, { useState } from "react";
 
-interface NavbarProps {
-  navlist: string[];
+interface NavLink {
+  name: string;
+  link: string;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ navlist }) => {
-  const navlinks: Array<string> = navlist;
+interface NavbarProps {
+  navlist: NavLink[];
+}
+
+const Navbar = ({ navlist }: NavbarProps) => {
+  const navlinks: NavLink[] = navlist;
+
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string
+  ) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header>
       <nav
@@ -13,7 +30,11 @@ const Navbar: React.FC<NavbarProps> = ({ navlist }) => {
         className="navbar fixed-top navbar-expand-lg bg-body-tertiary"
       >
         <div className="container">
-          <a className="navbar-brand" href="#main">
+          <a
+            className="navbar-brand"
+            href="#main"
+            onClick={(e) => scrollToSection(e, "main")}
+          >
             Dinesh Courier
           </a>
           <button
@@ -30,27 +51,15 @@ const Navbar: React.FC<NavbarProps> = ({ navlist }) => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ms-auto">
               {navlinks.map((link, index) => (
-                <a key={index} className="nav-link" href={`#${link}`}>
-                  {link}
+                <a
+                  key={index}
+                  className="nav-link"
+                  href={`#${link.link}`}
+                  onClick={(e) => scrollToSection(e, link.link)}
+                >
+                  {link.name}
                 </a>
               ))}
-              {/* <a
-                className="nav-link active"
-                aria-current="page"
-                href="#aboutUs"
-              >
-                About US
-              </a>
-              <a className="nav-link" href="#contactUs">
-                Contact Us
-              </a>
-              <a className="nav-link" href="#shipNow">
-                Ship Now
-              </a>
-              <a className="nav-link" href="#FAQs">
-                FAQ's
-              </a> */}
-              {/* <a className="nav-link contact" >Contact: +91 9877049989</a> */}
             </div>
           </div>
         </div>
